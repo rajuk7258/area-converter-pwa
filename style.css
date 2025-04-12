@@ -1,0 +1,92 @@
+:root {
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  :root {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 500px) {
+  :root {
+    font-size: 14px;
+  }
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f4f4f4;
+  padding: 1.5rem;
+}
+
+.converter {
+  max-width: 800px;
+  margin: auto;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 0 20px rgba(0,0,0,0.08);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 1.75rem;
+}
+
+.unit-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.25rem;
+  flex-wrap: wrap;
+}
+
+.unit-row i {
+  margin-right: 0.75rem;
+  width: 1.5rem;
+  text-align: center;
+  color: #666;
+  font-size: 1.2rem;
+}
+
+.unit-row input {
+  flex: 1;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  transition: border 0.2s;
+  min-width: 150px;
+}
+
+.unit-row input:focus {
+  border-color: #28a745;
+  outline: none;
+}
+
+.unit-label {
+  width: 180px;
+  margin-left: 1rem;
+  color: #444;
+  font-size: 1rem;
+}
+
+@media (max-width: 600px) {
+  .unit-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .unit-label {
+    margin-left: 2.25rem;
+    margin-top: 0.25rem;
+    font-size: 0.95rem;
+    width: auto;
+  }
+
+  .unit-row input {
+    width: 100%;
+    margin-left: 2.25rem;
+  }
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Area Converter</title>
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="icons/icon-192.png">
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('service-worker.js');
+      });
+    }
+  </script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <div class="converter">
+    <h2><i class="fa-solid fa-ruler-combined"></i> Area Converter</h2>
+
+    <div class="unit-row">
+      <i class="fa-solid fa-square-full"></i>
+      <input type="number" inputmode="decimal" id="sqm" placeholder="Square meters">
+      <div class="unit-label" title="m²">Square Meters (m²)</div>
+    </div>
+
+    <div class="unit-row">
+      <i class="fa-solid fa-mountain-city"></i>
+      <input type="number" inputmode="decimal" id="sqkm" placeholder="Square kilometers">
+      <div class="unit-label" title="km²">Square Kilometers (km²)</div>
+    </div>
+
+    <div class="unit-row">
+      <i class="fa-solid fa-ruler-horizontal"></i>
+      <input type="number" inputmode="decimal" id="sqft" placeholder="Square feet">
+      <div class="unit-label" title="ft²">Square Feet (ft²)</div>
+    </div>
+
+    <div class="unit-row">
+      <i class="fa-solid fa-ruler-combined"></i>
+      <input type="number" inputmode="decimal" id="sqyd" placeholder="Square yards">
+      <div class="unit-label" title="yd²">Square Yards (yd²)</div>
+    </div>
+
+    <div class="unit-row">
+      <i class="fa-solid fa-ruler"></i>
+      <input type="number" inputmode="decimal" id="sqin" placeholder="Square inches">
+      <div class="unit-label" title="in²">Square Inches (in²)</div>
+    </div>
+
+    <div class="unit-row">
+      <i class="fa-solid fa-tree"></i>
+      <input type="number" inputmode="decimal" id="acre" placeholder="Acres">
+      <div class="unit-label" title="Acres">Acres</div>
+    </div>
+
+    <div class="unit-row">
+      <i class="fa-solid fa-seedling"></i>
+      <input type="number" inputmode="decimal" id="hectare" placeholder="Hectares">
+      <div class="unit-label" title="Hectares">Hectares</div>
+    </div>
+
+    <div style="text-align: center; margin-top: 1.5rem;">
+      <button onclick="clearAll()" style="padding: 0.6rem 1.2rem; background: #dc3545; color: white; border: none; border-radius: 0.5rem; cursor: pointer;">
+        <i class="fa-solid fa-eraser"></i> Clear All
+      </button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
