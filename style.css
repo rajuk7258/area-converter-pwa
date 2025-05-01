@@ -21,7 +21,7 @@ body {
 }
 
 .converter {
-  max-width: 800px;
+  max-width: 400px;
   margin: auto;
   background: #fff;
   padding: 2rem;
@@ -72,7 +72,7 @@ h2 {
   font-size: 1rem;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 300px) {
   .unit-row {
     flex-direction: column;
     align-items: flex-start;
